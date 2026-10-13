@@ -4,14 +4,12 @@ services:
     env: docker
     plan: free
     envVars:
-      - key: GOOGLE_API_KEY
+      - key: GROQ_API_KEY
         sync: false
       - key: DATABASE_URL
         sync: false
       - key: DATABASE_ADMIN_URL
         sync: false
-      - key: GEMINI_MODEL
-        value: gemini-2.0-flash
       - key: MAX_ROWS_RETURNED
         value: "200"
       - key: DEFAULT_TOP_K
