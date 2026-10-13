@@ -12,7 +12,12 @@ class Settings(BaseSettings):
     gemini_model: str = "gemini-3.6-flash"
     
     # Groq configuration
+    # groq_api_key: str | None = None
+  
+    # Groq configuration
     groq_api_key: str | None = None
+    groq_model: str = "openai/gpt-oss-120b"  
+
 
     # --- Database ---
     # Full SQLAlchemy URL for the READ-ONLY role the agent queries with.
